@@ -4,8 +4,8 @@ require "pry"
 
 
 
-configure(:development)
-{set :database, "sqlite3:my_sintara_db.sqlite3"}
+configure(:development){set :database, "sqlite3:my_sintara_db.sqlite3"}
+
 require './models'
 
 set :sessions, true
