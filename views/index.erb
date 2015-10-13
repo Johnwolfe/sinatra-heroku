@@ -1,0 +1,27 @@
+<h1>
+	<%= @user.username %>
+</h1>
+
+<h1>
+	<%= @user.password %>
+</h1>
+
+<h1>
+	<%= @user.created_at %>
+</h1>
+
+<h1>
+	<%= @user.id %>
+</h1>
+
+<h2>
+	<% if @user.posts.last.title %>
+		<%= @user.posts.last.title %>
+	<% end %>
+</h2>
+
+<h2>
+	<% if @user.posts.last.body %>
+		<%= @user.posts.last.body %>
+	<% end %>
+</h2>

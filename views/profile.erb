@@ -1,0 +1,19 @@
+<h1>profile</h1>
+
+<%= @user.username %>
+
+
+<% @user.posts.each do |post| %>
+
+	<br>
+
+	<%= post.title %>
+
+	<br>
+
+	<%= post.body %>
+
+	<br>
+
+<% end %>
+

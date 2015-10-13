@@ -1,0 +1,12 @@
+<h1>
+	<%= current_user.username %>
+	, please write a post
+</h1>
+
+<form action="/new-post" method="post">
+	<label for="title">title</label>
+	<input type="text" name="title">
+	<label for="body">body</label>
+	<input type="text" name="body">
+	<input type="submit">
+</form>
